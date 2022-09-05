@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.filesplitter.HelloController">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" VBox.vgrow="ALWAYS">
+            <children>
+                <TextField fx:id="TextFieldNumber" layoutX="98.0" layoutY="317.0" prefHeight="26.0" prefWidth="532.0" />
+                <Button fx:id="buttonFile" layoutX="8.0" layoutY="356.0" mnemonicParsing="false" onAction="#getButtonFile" prefHeight="28.0" prefWidth="307.0" text="Select File">
+               <font>
+                  <Font name="Helvetica Neue" size="14.0" />
+               </font></Button>
+                <Button layoutX="324.0" layoutY="356.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="307.0" text="Split" fx:id="splitButton" onAction="#split">
+               <font>
+                  <Font name="Helvetica Neue" size="14.0" />
+               </font></Button>
+                <Label layoutX="9.0" layoutY="317.0" prefHeight="26.0" prefWidth="91.0" text="Minimum Lines" />
+            <ImageView fitHeight="300.0" fitWidth="640.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../../../drawable/main.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
