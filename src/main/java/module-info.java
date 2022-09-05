@@ -4,6 +4,6 @@ module com.example.filesplitter {
 
     requires org.controlsfx.controls;
 
-    opens com.example.filesplitter to javafx.fxml;
-    exports com.example.filesplitter;
+    opens com.rudrashah.filesplitter to javafx.fxml;
+    exports com.rudrashah.filesplitter;
 }

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rudrashah.filesplitter.HelloController">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" VBox.vgrow="ALWAYS">
+            <style>
+                -fx-background-color: #D5DDDF;
+            </style>
+            <children>
+                <TextField fx:id="TextFieldNumber" layoutX="106.0" layoutY="317.0" prefHeight="26.0" prefWidth="518.0">
+                    <style>
+                        -fx-background-radius: 10;
+                        -fx-background-color: #FFFFFF;
+                        -fx-padding-left: 10;
+                        -fx-padding-right: 10;
+                    </style>
+                </TextField>
+                <Button fx:id="buttonFile" layoutX="8.0" layoutY="356.0" mnemonicParsing="false" onAction="#getButtonFile" prefHeight="28.0" prefWidth="307.0" text="Select File" textFill="#0a85c7">
+                    <style>
+                        -fx-background-radius: 10;
+                        -fx-background-color: #0a85c7;
+                        -fx-text-fill: white;
+                    </style>
+               <font>
+                  <Font name="Helvetica Neue" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></Button>
+                <Button fx:id="splitButton" layoutX="324.0" layoutY="356.0" mnemonicParsing="false" onAction="#split" prefHeight="28.0" prefWidth="307.0" text="Split" textFill="#0a85c7">
+                    <style>
+                        -fx-background-radius: 10;
+                        -fx-background-color: white;
+                        -fx-text-fill: #0a85c7;
+                    </style>
+               <font>
+                  <Font name="Helvetica Neue" size="14.0" />
+               </font></Button>
+                <Label layoutX="14.0" layoutY="317.0" prefHeight="26.0" prefWidth="91.0" text="Minimum Lines">
+               <font>
+                  <Font name="System Bold" size="13.5" />
+               </font></Label>
+            <ImageView fitHeight="300.0" fitWidth="640.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../../../main.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
